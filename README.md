@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Rental Web Application
+
+![Car Rental App Screenshot](screenshot.png)
+
+Welcome to the Car Rental Web Application! This web application allows you to rent cars on a daily basis from nearby locations and provides pick and drop services. It's built with Next.js, TypeScript, Hygraph as the backend CMS, and Tailwind CSS for design, with user authentication powered by Clerk.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Key Features](#key-features)
+- [Future Scope](#future-scope)
+- [Deployed Project](#deployed-project)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up the Car Rental Web Application on your local machine.
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- Node.js: Download and install Node.js from [nodejs.org](https://nodejs.org/).
+- Yarn (optional but recommended): You can install Yarn globally by running `npm install -g yarn`.
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your_username/car-rental-web-app.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+    cd car-rental-web-app
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+Now that you've installed the dependencies, you can run the Car Rental Web Application locally.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This command will start the development server. You can access the application by opening your web browser and navigating to http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Key Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **User Authentication**: User authentication is handled seamlessly using Clerk, providing a secure login and registration process.
+- **GraphQL-based Backend Data API**: The backend is powered by Hygraph, a GraphQL-based CMS, ensuring efficient data retrieval and updates.
+- **Data-Driven UI**: The application's user interface is driven by data, making it easy to display dynamic information about available cars and rental locations.
 
-## Learn More
+**Future Scope**
+The Car Rental Web Application has exciting plans for future enhancements:
 
-To learn more about Next.js, take a look at the following resources:
+- **Admin Panel**: Implementing an admin panel to manage car listings, user accounts, and rental locations efficiently.
+- **Payment Integration**: Integrate payment gateways to facilitate secure online payments for car rentals.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Deployed Project**
+You can access the deployed Car Rental Web Application at [https://dew-carrent.vercel.app/](https://your-app-url.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**License**
+This project is licensed under the MIT License. Feel free to use and modify the code as needed.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any questions or support, please contact us at [https://dewank.social/#contact](https://dewank.social/#contact).
