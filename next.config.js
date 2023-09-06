@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+  compiler: {
+    styledComponents: true,
+  },
+  images: {
+    unoptimized: true,
+    domains: ["media.graphassets.com"],
+  },
+};
+module.exports = nextConfig;

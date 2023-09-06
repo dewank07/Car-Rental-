@@ -1,8 +1,11 @@
+import { ClerkProvider,SignIn } from '@clerk/nextjs'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Outfit } from 'next/font/google'
+import { SignedIn } from '@clerk/nextjs/app-beta'
+import { SignedOut } from '@clerk/nextjs/app-beta/client'
+import Navbar from '../components/Navbar'
+const inter = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +18,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+       <SignedIn>
+        <Navbar/>
+         {children}
+       </SignedIn>
+       <SignedOut>
+         <SignIn/>
+       </SignedOut>
+      </body>
     </html>
+    </ClerkProvider>
   )
 }
