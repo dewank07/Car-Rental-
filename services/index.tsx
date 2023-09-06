@@ -38,24 +38,25 @@ export const getCarsList = async() =>{
       
       
       export const createBooking=async(formValue:any)=>{
-        const mutationQuery=gql`
-        mutation MyMutation {
-          createBooking(
-            data:  {userName: "`+formValue.userName+`", 
-            pickUpDate: "`+formValue.pickUpDate+`", 
-            pickUpTime: "`+formValue.pickUpTime+`", 
-            dropOffDate: "`+formValue.dropOffDate+`", 
-            dropOffTime: "`+formValue.dropOffTime+`", 
-            contactNumber: "`+formValue.contactNumber+`", 
-            carId: {connect: 
-              {id: "`+formValue.carId+`"}}}
-          ) {
-            id
-          }
-        }
+        // const mutationQuery=gql`
+        // mutation MyMutation {
+        //   createBooking(
+        //     data:  {userName: "`+formValue.userName+`", 
+        //     pickUpDate: "`+formValue.pickUpDate+`", 
+        //     pickUpTime: "`+formValue.pickUpTime+`", 
+        //     dropOffDate: "`+formValue.dropOffDate+`", 
+        //     dropOffTime: "`+formValue.dropOffTime+`", 
+        //     contactNumber: "`+formValue.contactNumber+`", 
+        //     carId: {connect: 
+        //       {id: "`+formValue.carId+`"}}}
+        //   ) {
+        //     id
+        //   }
+        // }
         
-        `
+        // `
       
-        const result=await request(MASTER_URL,mutationQuery);
+        // const result=await request(MASTER_URL,mutationQuery);
+        const result = "hello"
         return result;
     }
