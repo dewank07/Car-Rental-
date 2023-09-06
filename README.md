@@ -71,7 +71,7 @@ The Car Rental Web Application has exciting plans for future enhancements:
 - **Payment Integration**: Integrate payment gateways to facilitate secure online payments for car rentals.
 
 **Deployed Project**
-You can access the deployed Car Rental Web Application at [https://dew-carrent.vercel.app/](https://your-app-url.com).
+You can access the deployed Car Rental Web Application at [https://dew-carrent.vercel.app/](https://dew-carrent.vercel.app/).
 
 **License**
 This project is licensed under the MIT License. Feel free to use and modify the code as needed.
