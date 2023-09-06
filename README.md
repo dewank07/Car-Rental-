@@ -1,6 +1,7 @@
 # Car Rental Web Application
 
-![Car Rental App Screenshot](screenshot.png)
+![image](https://github.com/dewank07/Car-Rental-/assets/68022840/adb57e99-40e2-4de1-ab7c-fbc324cc9ba4)
+
 
 Welcome to the Car Rental Web Application! This web application allows you to rent cars on a daily basis from nearby locations and provides pick and drop services. It's built with Next.js, TypeScript, Hygraph as the backend CMS, and Tailwind CSS for design, with user authentication powered by Clerk.
 
